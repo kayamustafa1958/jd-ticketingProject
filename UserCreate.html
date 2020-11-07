@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS --->
+    <link
+            rel="stylesheet"
+            href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/libs/css/style.css"/>
+    <link
+            rel="stylesheet"
+            href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
+    />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/charts/chartist-bundle/chartist.css"
+    />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/charts/morris-bundle/morris.css"
+    />
+    <link
+            rel="stylesheet"
+            href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css"/>
+    <link
+            rel="stylesheet"
+            href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
+    />
+    <title>UserCreate</title>
+</head>
+<body>
+<!-- ============================================================== -->
+<!-- main wrapper -->
+<!-- ============================================================== -->
+<div class="dashboard-main-wrapper">
+    <!-- ============================================================== -->
+    <!-- navbar -->
+    <!-- ============================================================== -->
+    <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <!-- <a class="navbar-brand" href="https://www.cybertekschool.com/"
+             >Cybertek</a
+             >-->
+            <a href="https://www.cybertekschool.com/">
+                <input type="image" src="assets/images/Cybertek_Logo.png" alt="Submit" width="190" height="48">
+            </a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar-right-top">
+                    <li class="nav-item dropdown nav-user">
+                        <a
+                                class="nav-link nav-user-img"
+                                href="#"
+                                id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                        ><img
+                                src="assets/images/avatar-1.jpg"
+                                alt=""
+                                class="user-avatar-md rounded-circle"
+                        /></a>
+                        <div
+                                class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2"
+                        >
+                            <div class="nav-user-info">
+                                <h5 class="mb-0 text-white nav-user-name">#Name</h5>
+                            </div>
+                            <a class="dropdown-item" href="#"
+                            ><i class="fas fa-user mr-2"></i>Account</a
+                            >
+                            <a class="dropdown-item" href="#"
+                            ><i class="fas fa-power-off mr-2"></i>Logout</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end navbar -->
+    <!-- ============================================================== -->
+
+
+    <!-- ============================================================== -->
+    <!-- left sidebar -->
+    <!-- ============================================================== -->
+    <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Build Left side menu items here-->
+                    <ul class="navbar-nav flex-column">
+
+                        <li class="nav-item">
+                            <a
+                                    class="nav-link active"
+                                    href="#"
+                                    data-toggle="collapse"
+                                    aria-expanded="false"
+                                    data-target="#submenu-1"
+                                    aria-controls="submenu-1"
+                            ><i class="fa fa-fw fa-user-circle"></i>Administration
+                                <span class="badge badge-success">6</span></a
+                            >
+                            <div id="submenu-1" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a
+                                                class="nav-link" href="UserCreate.html"
+                                        >User Create</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                        >Project Create</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end left sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+
+
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+    <div class="dashboard-wrapper">
+        <div class="container-fluid administrator-content">
+
+            <!-- ============================================================== -->
+            <!-- pageheader  -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header">
+                        <h3 class="mb-2">User Create </h3>
+                        <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce
+                            sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                        <div class="page-breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Adminstrator</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">User Create</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="">
+                        <h5 class="">Create User</h5>
+                        <div class="card-body">
+                            <form action="#" id="basicform" data-parsley-validate="">
+                                <div class="form-group">
+                                    <label for="inputFirstName">First Name</label>
+                                    <input id="inputFirstName" type="text" name="name" data-parsley-trigger="change"
+                                           required="" placeholder="Enter firs name" autocomplete="off"
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputLastName">Last Name</label>
+                                    <input id="inputLastName" type="text" name="name" data-parsley-trigger="change"
+                                           required="" placeholder="Enter last name" autocomplete="off"
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email address</label>
+                                    <input id="inputEmail" type="email" name="email" data-parsley-trigger="change"
+                                           required="" placeholder="Enter email" autocomplete="off"
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Password</label>
+                                    <input id="inputPassword" type="password" placeholder="Password" required=""
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputRepeatPassword">Repeat Password</label>
+                                    <input id="inputRepeatPassword" data-parsley-equalto="#inputPassword"
+                                           type="password" required="" placeholder="Password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-select">Role</label>
+                                    <select class="form-control" id="input-select">
+                                        <option>Select a Role</option>
+                                        <option>Admin</option>
+                                        <option>SDET</option>
+                                        <option>Developer</option>
+                                        <option>Project Manager</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
+                                        <label class="be-checkbox custom-control custom-checkbox">
+                                            <input type="radio" name="radio-stacked" checked="" class="custom-control-input"><span class="custom-control-label">Male</span>
+                                        </label>
+                                        <label class="be-checkbox custom-control custom-checkbox">
+                                            <input type="radio" name="radio-stacked" checked="" class="custom-control-input"><span class="custom-control-label">Female</span>
+                                        </label>
+
+                                    </div>
+                                    <div class="col-sm-6 pl-0">
+                                        <p class="text-right">
+                                            <button type="submit" class="btn btn-space btn-primary">Save</button>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!--pageheader  -->
+    <!-- ============================================================== -->
+
+
+</div>
+
+</body>
+</html>
